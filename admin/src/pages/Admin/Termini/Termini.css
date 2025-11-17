@@ -1,0 +1,234 @@
+.termini-container{
+    display: flex;
+    flex-direction: column;
+    padding:  15px 15px 15px;
+    width: 100%;
+    
+}.confirm{
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+ 
+}
+.confirm.zavrseno {
+  color: #008000;
+}
+
+
+.confirm.otkazano{
+    color: red;
+}
+.confirm.cekanje{
+  color: rgb(186, 15, 166);
+}
+
+
+.confirm.potvrdjeno {
+  color: blue;
+}
+.div-termin{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   padding-right: 40px;
+    
+}
+.div-termin .styled-select{
+    width: fit-content;
+    display: flex;
+   text-align: center;
+    margin-right: 20px;
+    background-color: #e83e8c;
+    color: white;
+}
+.calendar {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.months-container {
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  width: 100%;
+  max-width: 900px;
+  padding: 10px 0;
+}
+
+
+.month {
+  margin: 0 25px;
+  padding: 5px 10px;
+  font-size: 25px;
+  color: #aaa;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.3s, font-weight 0.3s;
+}
+
+.month.active {
+  color: #000;
+  font-weight: bold;
+}
+
+.month:hover {
+  color: #555;
+}
+
+
+.days {
+  display: flex;
+  overflow-x: scroll;
+  scrollbar-width: none;
+  width: 100%;
+  max-width: 850px;
+  padding: 10px 0;
+}
+
+.day {
+  margin: 15px;
+  min-width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+  color: #555;
+  border-radius: 70%;
+  background-color: #f7f7f7;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 10px;
+}
+
+.day:hover {
+  background-color: #ffe4b2;
+}
+
+.day.selected {
+  background-color: #ffa500;
+  color: #fff;
+}
+
+
+.filtered-termini{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.filtered-termini ul{
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  gap: 20px;
+  padding: 15px;
+}
+.filtered-termini li{
+  display: flex;
+  flex-direction: row;
+gap: 35px;
+align-items: center;
+}
+.filter-termin{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+    border-radius: 70%;
+  background-color: #e9e3e3;
+  padding: 15px;
+ 
+  border: 1px solid #d1d5db; 
+  border-radius: 4px;
+}
+@media (max-width: 1200px) {
+    .div-termin {
+        padding-right: 0;
+    }
+   
+
+    .months-container {
+        max-width: 600px;
+    }
+
+    .month {
+        margin: 5px;
+        font-size: 18px;
+    }
+
+    .days {
+        max-width: 600px;
+    }
+
+    .day {
+        margin: 5px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 900px) {
+    .months-container {
+      max-width: 450px;
+    }
+
+    .month {
+        margin: 2px;
+        font-size: 16px;
+    }
+
+    .days {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr); 
+        gap: 5px;
+    }
+
+    .day {
+        margin: 2px;
+        font-size: 14px;
+    }
+    .div-termin {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .filter-termin {
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+      font-size: 18px;
+  }
+
+}
+
+@media (max-width: 600px) {
+    .div-termin {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .filter-termin {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .months-container {
+        display: block;  
+        text-align: center;
+    }
+
+    .filtered-termini ul {
+        font-size: 16px;
+    }
+
+    .day {
+        font-size: 12px;
+        padding: 8px;
+    }
+    .confirm{
+      font-size: 15px !important;
+    }
+}

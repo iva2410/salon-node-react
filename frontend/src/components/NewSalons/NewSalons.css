@@ -1,0 +1,50 @@
+.new-salons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.new-salons  h1 {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.new-salons-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+    gap: 30px;
+    row-gap: 50px;
+}
+.new-list{
+    width: 100%;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px #00000015;
+    transition: 0.3s;
+    animation: fadeIn 1s;
+}
+
+.new-list img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 15px 15px 0px 0px;
+    transition: 0.2s;
+    border: 1px solid #bfdbfe;
+}
+
+.new-list p{
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #2c3e50;
+    margin: 6px;
+}
+
+hr{
+    margin: 10px 0px;
+    height: 2px;
+    background-color: #e2e2e2;
+    border: none;
+}

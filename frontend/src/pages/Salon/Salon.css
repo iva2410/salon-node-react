@@ -1,0 +1,399 @@
+@import "/node_modules/@mdi/font/css/materialdesignicons.min.css";
+
+.div-salon{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.left-div-info{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 300px;
+}
+.left-div{
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+}
+
+
+.left-div img{
+  
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: 0.2s;
+    border: 1px solid #bfdbfe;
+}
+.info-div{
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    gap: 8px;
+}
+.naziv{
+    font-size: 24px;
+    font-weight: 500;
+    color: #2c3e50;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.heart-icon {
+    font-size: 30px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    color: #ccc; 
+}
+
+.heart-icon.mdi-heart {
+    color: red; 
+}
+
+.tip{
+    line-height: 1;
+  color: #777;
+}
+
+.image-container{
+    position: relative;
+    width: 100%;
+    min-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.image-container img {
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.image-container img.active {
+    opacity: 1; 
+    position: relative;
+}
+
+.image-container button {
+    position: absolute;
+    top: 50%;
+    color: white;
+    cursor: pointer;
+    border: none;
+padding: 7px;
+border-radius: 90%;
+    opacity: 0.65;
+    transform: translateY(-50%);
+}
+.image-container button:first-child {
+    z-index: 1;
+    left: 10px;
+}
+
+.image-container span{
+    font-size: 25px;
+}
+
+.image-container button:last-child {
+    right: 10px;
+}
+.right-div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    width: 60%;
+    flex: 1;
+}
+.right-ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 20px;
+    color: #49557e;
+    font-size: 18px;
+}
+.right-div li{
+    cursor: pointer;
+}
+.right-div li.active{
+    color: rgb(183, 153, 176);
+
+    padding-bottom: 2px;
+    border-bottom: 2px solid #9d80a1;
+}
+
+.usluge {
+    display: flex;
+    flex-direction: column;
+}
+.usluge ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.usluga{
+    margin-top: 23px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.usluga h2{
+    font-size: 22px; 
+    color: #2c3e50;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.tipovi {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 8px;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: none;
+    border-bottom: 1px solid #f0f4f6;
+    padding: 8px 0;
+   
+}
+.tipovi-ime, .tipovi-cena{
+    font-weight: 300;
+    padding-top: 6px;
+}
+
+.tipovi-ime p, .tipovi-cena p{
+    padding-bottom: 10px;
+}
+.inf{
+    display: flex;
+    flex-direction: column;
+   
+    margin-top: 10px;
+}
+.inf p{
+    font-size: 25px;
+    font-weight: 500;
+    color: #2c3e50;
+}
+.div-vreme p{
+    font-size: medium;
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 10px;
+   
+}
+.div-vreme{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    border: 1px solid #f0f4f6;
+    border-radius: 8px;
+    padding: 10px;
+    margin-top: 15px;
+}
+.div-vreme ul{
+    margin-top: 0;
+  margin-bottom: 10px;
+  padding-left: 0;
+  list-style: none;
+}
+.div-vreme li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.mapa iframe{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+    margin-top: 15px;
+  margin-bottom: 5px;
+}
+.zakazivanje{
+    
+    margin-top: 50px;
+    font-size: 18px;
+  font-weight: 300;
+  
+  position: relative;
+  
+  
+ margin-bottom: 20px;
+}
+
+.zakazivanje span{
+    font-weight: 500;
+    
+}
+.div-zakazivanje{
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px solid #ddd; 
+    border-radius: 10px;
+    background-color: #f9f9f9; 
+}
+.div-zakazivanje p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+.div-zakazivanje span {
+   display: flex;
+   flex-direction: column;
+    padding: 3px 8px;
+    margin: 5px;
+}
+.div-zakazivanje button{
+    margin-top: 7px;
+   background-color: #8e8a8e;
+    font-size: 16px;
+    color: white;
+    border: 1px solid #745479;
+    padding: 8px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    min-width: 120px;
+    white-space: nowrap;
+   
+
+    transition: background-color 0.3s ease;
+}
+.div-zakazivanje button:hover {
+    background-color: #745479;
+}
+.utisak {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.utisak:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.utisak-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 8px;
+    color: #555;
+}
+
+.utisak-div p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+}
+
+
+.tip-ocena {
+    font-weight: bold;
+    color: white; 
+    background-color: rgb(109, 101, 135);
+    width: fit-content;
+    padding: 5px;
+    border-radius: 3px;
+    
+}
+
+.utisak-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #444;
+    font-size: 14px;
+}
+.oznaceno{
+    color: #000; 
+    font-weight: bold; 
+    border-radius: 5px; 
+    
+}
+
+.utisak-info p {
+    margin: 0;
+}
+
+.utisak-info p:last-child {
+    font-style: italic;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .div-salon {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-div-info,
+    .right-div {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .right-div {
+        margin-top: 20px;
+    }
+
+    .image-container {
+        min-width: 100%;
+        height: 300px;
+    }
+
+    .usluga h2 {
+        font-size: 20px;
+    }
+
+    .div-zakazivanje {
+        padding: 10px 5px;
+    }
+
+    .div-zakazivanje button {
+        padding: 10px 20px; 
+        font-size: 16px; 
+    }
+
+    .div-vreme {
+        margin-top: 15px;
+    }
+    .utisak-div{
+        flex-direction: column;
+        align-items: start;
+    }
+}
+@media (max-width: 480px) {
+    .utisak-info {
+        font-size: 12px;
+    }
+
+    .div-zakazivanje button {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    .usluga h2 {
+        font-size: 18px;
+    }
+}
+

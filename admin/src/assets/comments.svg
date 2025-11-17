@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 780" id="comments-chat-bubbles">
+  <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20" d="M755.2 236c0-101.8-82.8-184.7-184.7-184.7-94.6 0-172.8 71.5-183.4 163.3 80.1 36.1 138.4 112.3 149.3 202.9 11 2.1 22.4 3.2 34.1 3.2 26.9 0 52.8-5.6 77-16.8l96 37.1-25.5-93.8c24.3-32.3 37.2-70.6 37.2-111.2zM665 186.9H486.3M665 242.1H486.3M665 297.2H494.7"></path>
+  <path fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20" d="m42.4 732.5 35.5-130.2C44 557.7 26.2 504.5 26.2 448.2c0-141.2 114.9-256.1 256.1-256.1s256 114.9 256 256.1-114.9 256.1-256 256.1c-37.3 0-73.2-7.8-106.7-23.2L42.4 732.5z"></path>
+  <g fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="20">
+    <path d="M151.3 381.6h247.8M151.3 458.1h247.8M151.3 534.7h247.8"></path>
+  </g>
+</svg>

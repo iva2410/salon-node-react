@@ -1,0 +1,39 @@
+.sidebar img{
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    filter: invert(100%) sepia(100%) saturate(100%) hue-rotate(180deg) brightness(100%) contrast(100%);
+
+}
+
+.sidebar{
+    background-color: #1a2942;
+  color: #99abb4;
+  min-width: 250px;
+  min-height: 100vh;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.sidebar ul{
+    margin-top: 15px;
+}
+
+.sidebar a{
+    display: flex;
+    align-items: center;
+    gap: 12px; 
+    padding: 14px 12px; 
+    cursor: pointer;
+}
+
+.sidebar .active{
+    background-color: #e83e8c;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+      display: none; 
+    }
+  }

@@ -1,0 +1,41 @@
+
+.confirm{
+    font-size: 18px;
+    font-weight: bold;
+   
+}
+.confirm.zavrseno {
+    color: #008000;
+  }
+  
+.confirm.otkazano{
+      color: red;
+  }
+  
+  .confirm.potvrdjeno {
+    color: blue;
+  }
+  
+
+  .div-potvrda {
+    display: flex;
+    flex-direction: row;
+ align-items: center;
+ padding: 5px;
+  }
+
+  .btn-potvrda{
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+    cursor: pointer;
+    padding: 2px;
+    transition: background-color 0.3s ease;
+  }
+  @media (max-width:1024px) {
+    
+    .btn-potvrda{
+      width: 25px;
+      height: 25px;
+    }
+  }

@@ -1,0 +1,309 @@
+.glavni{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.div-left {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1;
+    max-width: 400px;
+    height: fit-content;
+}
+
+.div-usluga {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.div-jedan {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.div-usluga-jedan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+ 
+  
+}
+.div-usluga-jedan p {
+    font-size: 16px;
+    color: #333;
+}
+.div-usluga-dva{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+.zaposleni {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.btn-zap {
+    border: 1px solid #999;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.btn-zap:hover {
+
+    background-color: rgb(245, 233, 249);
+
+}
+
+.people{
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    border: 0;
+    margin-right: 10px;
+}
+
+.dropdown{
+    border: 1px solid #ccc;
+  padding: 10px;
+  margin: 1px auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  width: auto;
+  min-width: 200px;
+  max-width: 300px; 
+   position: absolute;
+   z-index: 100;
+}
+
+
+.zatvoreno{
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.5;  
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 13px;
+
+}
+.dropdown li{
+    padding: 10px;
+    font-size: 14px;
+  list-style: none;
+    cursor: pointer;
+}
+
+.glavni .right-div{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    flex: 2;
+    max-width: 800px;
+   
+}
+
+.calendar{
+    display: flex;
+    flex-direction: row;
+   
+    padding: 16px;
+    background: #f0f4f6;
+    border-radius: 8px;
+    gap: 10px;
+    text-align: center;
+  justify-content: center;
+}
+
+.table{
+    flex: 1;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 100px;
+    
+}
+
+.dan{
+    text-transform: uppercase;
+  font-weight: 300;
+  font-size: 13px;
+}
+.datum{
+    font-size: 16px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  line-height: 32px;
+  text-align: center;
+
+  margin: 0 auto;
+}
+
+.aktivan{
+    background-color:darksalmon;
+    color: white;
+}
+
+.slots{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid #f0f4f6;
+  background: #fff;
+  gap:4px;
+  padding: 4px;
+}
+
+.slots p{
+    cursor: pointer;
+    padding: 8px;
+  margin: 4px;
+  min-width: 64px !important;
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid #999;
+  border-radius: 8px;
+  text-align: center;
+  white-space: nowrap;  
+}
+
+.oznacen{
+    background-color: darksalmon;
+    transition: border .25s linear,color .25s linear,background-color .25s linear;
+color: white;
+}
+
+.zakazi{
+    background-color: darksalmon;
+    font-size: 16px;
+    color: white;
+    border: 1px solid #745479;
+    padding: 10px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 400;
+    white-space: nowrap;
+    max-width: fit-content;
+    margin-top: 40px;
+
+}
+
+  
+ 
+.calendar button {
+    background: transparent;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.65;
+    font-size: 16px;
+}
+.naziv-mesec{
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1.5rem; 
+    color: #333;
+    font-weight: bold; 
+    text-align: center; 
+    margin: 10px 0;
+
+    padding: 10px; 
+    display: inline-block;
+}
+
+@media (max-width:1250px) {
+    .glavni {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .table {
+        margin: 0;
+    }
+    .calendar{
+        gap: 4px;
+    }
+   
+   
+   
+}
+
+@media (max-width: 768px) {
+    .btn-zap {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+    .calendar{
+        gap:4px;
+    }
+    .slots{
+        gap: 2px;
+
+    }
+    .table {
+        margin: 0;
+    }
+
+    .slots p {
+        font-size: 13px;
+        padding: 6px 8px;
+    }
+   .naziv, .naziv-mesec{
+    font-size: 20px;
+   }
+
+    .zakazi {
+        font-size: 14px;
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn-zap {
+        font-size: 12px;
+    }
+
+    .slots p {
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+   .div-jedan{
+    gap: 7px;
+   }
+
+    .zakazi {
+        font-size: 12px;
+        padding: 6px 16px;
+    }
+}

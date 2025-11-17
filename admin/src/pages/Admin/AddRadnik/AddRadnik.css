@@ -1,0 +1,46 @@
+.radnik-container{
+    padding:  15px 15px 15px;
+    width: 100%;
+}
+
+.container-div-radnik{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: white;
+    border-width: 1px;
+    border-radius: 4px;
+    color: #515365;
+    font-size: 17px;
+}
+.radnik{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width:60%;
+    margin-right: 2px;
+    margin-left: 2px;
+    padding: 16px;
+}
+.radnik label{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.btn-add{
+   width: fit-content;   
+   margin-top: 5px;    
+    padding: 8px;              
+    background-color: #10B981; 
+    color: white;          
+    border-radius: 4px; 
+}
+
+@media (max-width:690px) {
+   
+    .radnik{
+      width: 100%;
+    }
+}

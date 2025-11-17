@@ -1,0 +1,159 @@
+.usluga-div-first{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #d1d5db; 
+  border-radius: 4px;
+    align-items: flex-start;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+.usluga-div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #d1d5db; 
+  border-radius: 4px;
+    align-items: flex-start;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.usluge{
+   display: flex;
+   flex-direction: column;
+   padding: 5px;
+}
+.div-usluga{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 400;
+}
+
+.div-usluga h2, .div-usluga p, .vreme-div h2{
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.usluga{
+    display: flex;
+    flex-direction: column;
+    padding: 7px;
+    width: 100%;
+}
+.tipovi-usluge{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tipovi-usluge .tipovi-cena{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: end;
+}
+
+.tipovi-usluge .input-usluga{
+    width: 40%;
+}
+.tipovi-usluge .tipovi-ime{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+@media (max-width: 768px) {
+    .usluga-div-first,
+    .usluga-div {
+        flex-direction: column; 
+        gap: 15px; 
+    }
+
+    .tipovi-usluge {
+        flex-direction: row;
+        align-items: stretch; 
+    }
+    
+    .div-dan label{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 15px;
+        align-items: center;
+        gap: 10px; 
+      }
+      .dan-input {
+        width: 40%; 
+        height: 40%;
+      }
+
+    .tipovi-usluge .input-usluga {
+        width: 100%; 
+    }
+
+    .tipovi-usluge .tipovi-cena {
+        align-items: flex-start; 
+    }
+
+    .div-usluga h2, .div-usluga p {
+        font-size: 16px; 
+    }
+}
+
+@media (max-width: 576px) {
+    .usluga-div-first,
+    .usluga-div  ,.vreme-div{
+        padding: 5px; 
+        gap: 10px;
+    }
+
+    .usluge {
+        padding: 2px; 
+    }
+
+    .div-usluga h2, .div-usluga p, .usluga-div h2 {
+        font-size: 14px;
+    }
+
+    .tipovi-usluge {
+        gap: 10px; 
+    }
+
+    .tipovi-usluge .input-usluga {
+        width: 100%;
+    }
+
+    .tipovi-usluge .tipovi-cena {
+        font-size: 14px; 
+        gap: 3px; 
+    }
+}
+
+@media (max-width: 375px) {
+    .usluga-div-first,
+    .usluga-div {
+        padding: 5px;
+        gap: 5px; 
+    }
+
+    .div-usluga h2, .div-usluga p, .vreme-div h2 {
+        font-size: 12px;
+    }
+
+    .tipovi-usluge .tipovi-cena,
+    .tipovi-usluge .tipovi-ime {
+        gap: 2px; 
+    }
+
+    .tipovi-usluge .input-usluga {
+        width: 100%;
+    }
+}
